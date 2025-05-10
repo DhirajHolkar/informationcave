@@ -1,0 +1,216 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgb(190, 190, 190);
+} 
+.navbar-item{
+  padding: 0 1rem;
+}
+.navbar__logo .navbar-large-logo {
+  width: 250px;
+  height: auto;
+}
+.navbar__logo .navbar-small-logo {
+  display: none;
+}
+.navbar__links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
+.navbar__search input {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(190, 190, 190);
+  min-width: 400px;
+  width: 100%;
+  outline: none;
+  font-size: 1.6rem;
+}
+.navbar__search button {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  background-color: rgb(90, 90, 255);
+  border: 1px solid rgb(90, 90, 255);
+}
+.navbar__search button:hover {
+  cursor: pointer;
+}
+
+/* Highlight active link with a blue underline */
+.navbar__links a.active-link {
+  border-bottom: 2px solid blue;
+  padding-bottom: 4px;
+  color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+/* Hamburger icon hidden by default */
+.navbar__menu-icon {
+  display: none;
+  flex: 0;
+  cursor: pointer;
+}
+
+/* Sidebar initial hidden */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  transition: right 0.3s ease;
+  z-index: 200;
+}
+
+/* Sidebar open */
+.sidebar.open {
+  right: 0;
+}
+
+/* Sidebar links */
+.sidebar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+}
+.sidebar a:hover{
+  color: blue;
+}
+
+/* Close button inside sidebar */
+.sidebar__close-icon {
+  align-self: flex-end;
+  cursor: pointer;
+}
+.sidebar__close-icon img{
+  width: 5rem;
+}
+
+/* Overlay behind sidebar */
+.sidebar__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+
+
+
+
+
+
+
+/* media queries start here ******************************************************************************* */
+
+
+@media (min-width:801px){
+  .sidebar,
+  .sidebar__overlay,
+  .navbar__menu-icon {
+    display: none;
+  }
+}
+
+
+/* Media Queries */
+@media (max-width:800px) {
+  /* Show small logo and hide large logo */
+  .navbar{
+    padding: 1.5rem 0rem;
+  }
+  .navbar-item{
+    flex: unset;
+  }
+  .navbar__logo .navbar-large-logo {
+    display: none;
+  }
+  .navbar__logo .navbar-small-logo {
+    width: 4.2rem;
+    height: auto;
+    display: inline;
+  }
+  .navbar__logo{
+    margin-left: 2rem;
+    
+  }
+  
+  /* Hide normal navbar links */
+  .navbar__links {
+    display: none;
+  }
+
+  /* Show hamburger menu */
+  .navbar__menu-icon {
+    display: block;
+  }
+  .navbar__menu-icon img{
+    width: 2.5rem;
+  }
+  .navbar__menu-icon{
+    margin-right: 2rem;
+
+  }
+
+}
+
+
+@media (max-width:600px){
+  .navbar__search input{
+    min-width: unset;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width:400px){
+  .navbar__logo{
+    display: none;
+  }
+.navbar__search{
+  margin-left: 2rem;
+}
+.navbar__search input {
+  padding: 0.1rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+.navbar__search button {
+  padding: 0.2rem 0.5rem;
+  font-size: 15px;
+  background-color: rgb(90, 90, 255);
+  color: white;
+  border: 1px solid rgb(90, 90, 255);
+}
+
+.navbar__menu-icon{
+  margin-right: 2rem;
+}
+.navbar__menu-icon img{
+  width: 2.5rem;
+}
+}

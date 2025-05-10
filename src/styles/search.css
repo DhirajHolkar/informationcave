@@ -1,0 +1,161 @@
+.search-container {
+  margin: 0 auto;
+  padding: 20px 100px;
+}
+.search-filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.search-filter-button {
+  padding: 10px 20px;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.search-filter-button.active {
+  background-color: #333;
+  color: white;
+}
+
+
+
+
+
+
+
+.search-results-container {
+  display: flex;
+  flex-direction: column;
+}
+.search-result-item {
+  display: flex;
+  text-decoration: none;
+  border-radius: 8px;
+  background: white;
+  color: inherit;
+  gap: 1.6rem;
+  padding: 1.2rem;
+  border-bottom: 1px solid #ddd;
+}
+.search-result-image-container img {
+  object-fit: cover;
+  width: 100px;
+  height: auto;
+}
+.search-square-image {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* makes it square */
+  object-fit: cover;
+}
+.search-result-title {
+  font-size: 1.9rem;
+  margin: 8px 0px;
+  color: rgb(50,50,190);
+}
+.search-result-title:hover{
+  text-decoration: underline;
+}
+.search-result-description {
+  font-size: 1.4rem;
+  color: #555;
+}
+.search-loading, .search-no-results {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.5rem;
+  color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pagination-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.page-button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  margin: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.page-button:hover {
+  background-color: #ddd;
+}
+
+.page-button.active {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ********************************************************************************************** */
+
+@media (max-width:500px){
+  .search-result-title{
+    font-size: 1.4rem;
+  }
+  .search-page-container {
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  .search-filters{
+   gap: 5px;
+  }
+  .search-filter-button{
+    padding: 10px 15px;
+  }
+  
+}
+
+@media (max-width:600px){
+  
+  .search-container{
+    padding: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

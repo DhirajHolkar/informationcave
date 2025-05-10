@@ -1,0 +1,120 @@
+.blogs-page-loading {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 100px;
+  color: #777;
+}
+
+.blogs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 100px;
+}
+
+.blogs-container-postcard {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+
+
+/* Image itself */
+.blogs-image {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  width: 100px;
+  height: auto;
+}
+
+/* Text wrapper */
+.search-page-item2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Link styling only for title now */
+.blogs-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blogs-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: rgb(50,50,190);
+}
+.blogs-title:hover{
+    text-decoration: underline;
+}
+
+.blogs-description {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pagination-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.page-button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  margin: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.page-button:hover {
+  background-color: #ddd;
+}
+
+.page-button.active {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+
+
+
+
+
+
+
+/* ****************************************************************************** */
+
+
+@media (max-width:600px){
+    .blogs-title{
+        font-size: 1.5rem;
+    }
+    .blogs-description{
+        font-size: 1.2rem;
+    }
+    .blogs-container{
+      padding: 10px;
+    }
+}

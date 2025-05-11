@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <p className='footer-text'>
-        © {new Date().getFullYear()} bingecave.com | All rights reserved. |{' '}
+        © {new Date().getFullYear()} informationcave.com | All rights reserved. |{' '}
         <Link href="/about">
           <span className='footer-link'>About Us</span>
         </Link>

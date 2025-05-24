@@ -1,0 +1,40 @@
+.bannerContainer {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-title{
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+.banner-text{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .banner-title{
+    font-size: 3rem;
+  }
+  .banner-text{
+    font-size: 2rem;
+  }
+}

@@ -15,7 +15,7 @@ export default function BlogPage() {
     const fetchPosts = async () => {
       try {
         const standardPosts = await client.fetch(`
-          *[_type == "blogsStandardDetails"] {
+          *[_type == "blogsStandardDetails"] | order(_createdAt desc) {
             _id,
             _type,
             title,

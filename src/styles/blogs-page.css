@@ -94,9 +94,9 @@
 }
 
 .page-button.active {
-  background-color: #333;
+  background-color: rgb(102, 102, 255);
   color: #fff;
-  border-color: #333;
+  border-color: rgb(102, 102, 255);
 }
 
 

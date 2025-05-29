@@ -8,6 +8,9 @@
 .navbar-item{
   padding: 0 1rem;
 }
+.navbar__logo{
+  margin-left: 2rem;
+}
 .navbar__logo .navbar-large-logo {
   width: 250px;
   height: auto;

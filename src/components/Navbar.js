@@ -26,8 +26,8 @@ export default function Navbar() {
       <nav className="navbar">
         <div className="navbar__logo navbar-item">
           <Link href="/">
-            <img src="informationcave-logo.png" alt="" className="navbar-large-logo" />
-            <img src="informationcave-icon.png" alt="" className="navbar-small-logo" />
+            <img src="/informationcave-logo.png" alt="" className="navbar-large-logo" />
+            <img src="/informationcave-icon.png" alt="" className="navbar-small-logo" />
           </Link>
         </div>
 
@@ -40,19 +40,19 @@ export default function Navbar() {
               onChange={(e) => setSearchQuery(e.target.value)}
             />
             <button type="submit">
-              <img src="search.svg" alt="" />
+              <img src="/search.svg" alt="" />
             </button>
           </form>
         </div>
 
         <div className="navbar__menu-icon" onClick={toggleSidebar}>
-          <img src="menu-icon.svg" alt="menu" />
+          <img src="/menu-icon.svg" alt="menu" />
         </div>
       </nav>
 
       <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
         <div className="sidebar__close-icon" onClick={toggleSidebar}>
-          <img src="close-icon.svg" alt="close" />
+          <img src="/close-icon.svg" alt="close" />
         </div>
 
         <Link href="/blogs" onClick={toggleSidebar}>Blogs</Link>

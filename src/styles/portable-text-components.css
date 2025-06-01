@@ -1,8 +1,7 @@
  .blogsection-block-container {
-  margin: 1.25rem 0;
+  /* margin: 1.25rem 0; */
   line-height: 1.8;
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 1.6rem;
 }
 
 .blogsection-heading-h1 {
@@ -28,7 +27,8 @@
 .blogsection-heading-h6 {
   font-size: 2rem;
   font-weight: 600;
-  margin: 1.2rem 0 0.6rem;
+  /* margin: 1.2rem 0 0.6rem; */
+  margin-top: 3rem;
 }
 
 .blogsection-ul,

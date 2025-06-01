@@ -11,16 +11,15 @@
   line-height: 1.6;
 }
 .blogstandard-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 .blogstandard-intro {
   font-size: 1.6rem;
-  margin-bottom: 40px;
 }
 .blogstandard-content {
   font-size: 1.6rem;
-  color: #333;
 }
 
   

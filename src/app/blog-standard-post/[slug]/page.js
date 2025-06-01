@@ -48,7 +48,7 @@ function BlogPostContent() {
 
   return (
     <div className="blogstandard-container">
-      <h1 className="blogstandard-title">{post.title}</h1>
+      <div className="blogstandard-title">{post.title}</div>
       <p className="blogstandard-intro">{post.intro}</p>
 
       <div className="blogstandard-content">

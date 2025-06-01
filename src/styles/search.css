@@ -1,11 +1,13 @@
 .search-container {
-  margin: 0 auto;
-  padding: 20px 100px;
+  margin: 2rem auto;
+  max-width: 1000px;
+  /* border: 1px solid black; */
+
 }
 .search-filters {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  /* gap: 15px; */
   margin-bottom: 20px;
 }
 .search-filter-button {
@@ -39,7 +41,7 @@
   background: white;
   color: inherit;
   gap: 1.6rem;
-  padding: 1.2rem;
+  padding: 2rem;
   border-bottom: 1px solid #ddd;
 }
 .search-result-image-container img {

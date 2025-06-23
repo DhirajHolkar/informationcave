@@ -5,6 +5,12 @@ import Link from 'next/link';
 import { client } from '../../../sanity.js'; // adjust path if needed
 import '../../styles/blogs-page.css';
 
+
+export const metadata = {
+  title: 'Science and Technology Blogs',
+  description: 'Explore Fascinating Science Facts',
+};
+
 export default function BlogPage() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);

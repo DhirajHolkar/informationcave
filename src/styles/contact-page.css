@@ -1,0 +1,30 @@
+/* styles/contact.css */
+
+.contact-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.contact-title {
+  font-size: 3.6rem;
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.contact-email {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.contact-note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 40px;
+}

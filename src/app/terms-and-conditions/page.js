@@ -8,7 +8,7 @@ const TermsPage =()=> {
     <div className="terms-container">
       <div className="terms-title">Terms and Conditions</div>
       <p className="terms-text">
-        At our core, we are passionate about science and committed to sharing knowledge responsibly. While we always do our best to ensure the information on this website is accurate, reliable, and up to date, it's important to understand the terms under which you use our content. Please read the following carefully.
+        At our core, we are passionate about science and committed to sharing knowledge responsibly. While we always do our best to ensure the information on this website is accurate, reliable, and up to date, it is important to understand the terms under which you use our content. Please read the following carefully.
         By accessing and using this website, you agree to be bound by the terms outlined below. If you do not agree with any part of these terms, please refrain from using the site.
       </p>
 

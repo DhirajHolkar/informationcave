@@ -4,9 +4,9 @@
 import React from 'react';
 import '../../styles/privacy-policy-page.css'
 
-export default function PrivacyPolicy() {
+const PrivacyPolicy = () => {
   return (
-    <main className="policy-container">
+    <div className="policy-container">
       <div className="policy-title">Privacy Policy</div>
       <p className="policy-text">
         Your privacy is important to us. This Privacy Policy explains how we handle your information when you visit our website.
@@ -24,6 +24,8 @@ export default function PrivacyPolicy() {
       </p>
 
       <p className="policy-note">Last updated: June 24, 2025</p>
-    </main>
+    </div>
   );
-}
+};
+
+export default PrivacyPolicy;

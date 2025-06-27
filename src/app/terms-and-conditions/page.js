@@ -3,12 +3,12 @@
 import React from 'react';
 import '../../styles/terms-and-conditions-page.css'
 
-export default function TermsPage() {
+const TermsPage =()=> {
   return (
-    <main className="terms-container">
+    <div className="terms-container">
       <div className="terms-title">Terms and Conditions</div>
       <p className="terms-text">
-        At our core, we’re passionate about science and committed to sharing knowledge responsibly. While we always do our best to ensure the information on this website is accurate, reliable, and up to date, it's important to understand the terms under which you use our content. Please read the following carefully.
+        At our core, we are passionate about science and committed to sharing knowledge responsibly. While we always do our best to ensure the information on this website is accurate, reliable, and up to date, it's important to understand the terms under which you use our content. Please read the following carefully.
         By accessing and using this website, you agree to be bound by the terms outlined below. If you do not agree with any part of these terms, please refrain from using the site.
       </p>
 
@@ -37,11 +37,13 @@ export default function TermsPage() {
       <p className="terms-text">
         We may update our terms and conditions from time to time. Please review this page periodically for
         any changes. We reserve the right to modify or update these terms at any time without prior notice. Continued use of the site following any changes constitutes your acceptance of the revised terms.
-        Let’s keep exploring, learning, and staying curious — science is always evolving, and so are we.
-        We’ve always got your back as you journey through the wonders of science with us.
+        Lets keep exploring, learning, and staying curious — science is always evolving, and so are we.
+        We have always got your back as you journey through the wonders of science with us.
       </p>
 
       <p className="terms-note">Last updated: June 24, 2025</p>
-    </main>
+    </div>
   );
-}
+};
+
+export default TermsPage;

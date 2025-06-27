@@ -7,8 +7,8 @@ const ContactPage = () => {
     <div className="contact-container">
       <div className="contact-title">Contact Us</div>
       <p className="contact-text">
-        Have questions, feedback, or just want to say hello? We’d love to hear from you!
-        Whether it’s about science topics, collaborations, or suggestions for improvement,
+        Have questions, feedback, or just want to say hello? We would love to hear from you!
+        Whether it is about science topics, collaborations, or suggestions for improvement,
         feel free to reach out.
       </p>
       <p className="contact-text">
@@ -19,7 +19,7 @@ const ContactPage = () => {
         informationcave100@gmail.com
       </p>
       <p className="contact-text">
-        We usually respond within 24–48 hours. Thank you for supporting science!
+        We usually respond within 24 to 48 hours. Thank you for supporting science!
         Stay Curious and keep exploring!
       </p>
     </div>

@@ -13,7 +13,7 @@ const AboutPage = () => {
       </p>
       <p className='aboutus-text'>
         Our goal is to Share the latest in science and technology in a way anyone can understand. Encourage curiosity, critical thinking, and a love for discovery. Support learners, educators, and curious minds across the globe. 
-        Thank you for being a part of our journey. Let’s explore this fascinating world and our future together.
+        Thank you for being a part of our journey. Lets explore this fascinating world and our future together.
       </p>
       <p className='aboutus-text'>
         Stay connected and explore more exciting content. If you have any questions or feedback, feel free to reach out to us anytime!

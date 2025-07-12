@@ -13,7 +13,7 @@ const client = createClient({
 });
 
 // Your domain name
-const baseUrl = 'https://informationcave.com';
+const baseUrl = 'https://www.informationcave.com';
 
 async function fetchSlugs() {
   const blogStandardSlugs = await client.fetch(`*[_type == "blogsStandardDetails" && defined(slug.current)]{ "slug": slug.current }`);

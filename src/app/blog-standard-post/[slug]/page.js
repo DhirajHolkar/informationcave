@@ -75,6 +75,9 @@
 
 
 
+
+
+
 import { client } from '../../../../sanity';
 import { PortableText } from '@portabletext/react';
 import { PortableTextComponents } from '../../../components/PortableTextComponents';
@@ -82,7 +85,7 @@ import '../../../styles/blogstandard-page.css';
 
 export async function generateMetadata({ params }) {
   const { slug } = params;
-  
+
   const query = `
     *[_type == "blogsStandardDetails" && slug.current == $slug][0] {
       title
@@ -90,9 +93,14 @@ export async function generateMetadata({ params }) {
   `;
   const post = await client.fetch(query, { slug });
 
+  const baseUrl = 'https://www.informationcave.com'; // ⬅️ Replace with your actual domain, no trailing slash
+
   return {
     title: post?.title || 'Science Blog',
     description: `Read more about ${post?.title || 'amazing science topics'}.`,
+    alternates: {
+      canonical: `${baseUrl}/blog-standard-post/${slug}`,
+    },
   };
 }
 

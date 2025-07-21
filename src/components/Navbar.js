@@ -26,7 +26,7 @@ export default function Navbar() {
       <nav className="navbar">
         <div className="navbar__logo navbar-item">
           <Link href="/">
-            <img src="/informationcave-logo.png" alt="" className="navbar-large-logo" />
+            <img src="/informationcave-logo1.png" alt="" className="navbar-large-logo" />
             <img src="/informationcave-icon.png" alt="" className="navbar-small-logo" />
           </Link>
         </div>

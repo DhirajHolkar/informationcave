@@ -13,7 +13,7 @@ export const metadata = {
   title: 'Science and Technology Website',
   description: 'Science Facts and Fascinating Wonders of the World',
   icons:{
-    icon:"/informationcave-icon.png",
+    icon:"/protoncave-icon.png",
   }
 };
 

@@ -13,7 +13,7 @@ const client = createClient({
 });
 
 // Your domain name
-const baseUrl = 'https://www.informationcave.com';
+const baseUrl = 'https://www.protoncave.com';
 
 async function fetchSlugs() {
   const blogStandardSlugs = await client.fetch(`*[_type == "blogsStandardDetails" && defined(slug.current)]{ "slug": slug.current }`);
@@ -29,6 +29,11 @@ async function generateSitemap() {
   const staticPages = [
     `${baseUrl}/`,
     `${baseUrl}/about`,
+    `${baseUrl}/blogs`,
+    `${baseUrl}/contact`,
+    `${baseUrl}/privacy-policy`,
+    `${baseUrl}/terma-and-conditions`,
+
   ];
 
   const allUrls = [

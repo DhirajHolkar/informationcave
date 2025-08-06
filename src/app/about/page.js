@@ -8,7 +8,7 @@ const AboutPage = () => {
     <div className='aboutus-container'>
       <div className='aboutus-container-heading'>About Us</div>
       <p className='aboutus-text'>
-        Welcome to informationcave.com We are passionate about sharing knowledge and content through our blog posts and collections. 
+        Welcome to protoncave.com We are passionate about sharing knowledge and content through our blog posts and collections. 
         We provide quality information for our audience, Whether you are here to read insightful posts or explore science and technology, or just love cool science stuff we are glad to have you!
       </p>
       <p className='aboutus-text'>

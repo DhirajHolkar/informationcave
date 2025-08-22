@@ -16,7 +16,7 @@ const ContactPage = () => {
       </p>
       <p className="contact-text">
         {/* <a href="mailto:informationcave100@gmail.com">informationcave100@gmail.com</a> */}
-        informationcave100@gmail.com
+        protoncave@gmail.com
       </p>
       <p className="contact-text">
         We usually respond within 24 to 48 hours. Thank you for supporting science!

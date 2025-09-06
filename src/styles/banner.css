@@ -1,7 +1,11 @@
 .bannerContainer {
   position: relative;
   width: 100%;
+  /* width:65%; */
+
   margin: 0 auto;
+  /* margin: 0px auto; */
+
   margin-bottom: 3rem;
   height: 70vh;
   overflow: hidden;

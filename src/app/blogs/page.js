@@ -68,24 +68,39 @@ export default function BlogPage() {
   return (
     <div className='blogs-container'>
       {currentPosts.map(post => (
-        <div key={post.id} className='blogs-container-postcard'>
-          <div className='search-page-item1'>
-            {post.image && <img src={post.image} alt={post.title} className='blogs-image' />}
-          </div>
 
-          <div className='search-page-item2'>
+        <div key={post.id} className='blogs-container-postcard'>
+
+          <div className='search-page-item1'>
+
             <Link
               href={`/blog-standard-post/${post.slug}`}
               className='blogs-link'
             >
-              <div className='blogs-title'>{post.title}</div>
+            {post.image && <img src={post.image} alt={post.title} className='blogs-image' />}
+            </Link>
+            
+          </div>
+
+          <div className='search-page-item2'>
+
+            <Link
+              href={`/blog-standard-post/${post.slug}`}
+              className='blogs-link'
+            >
+
+            <div className='blogs-title'>{post.title}</div>
+
             </Link>
 
             <p className='blogs-description'>
               {post.intro?.length > 100 ? post.intro.slice(0, 100) + '...' : post.intro}
             </p>
+
           </div>
+
         </div>
+
       ))}
 
       <div className='pagination-buttons'>

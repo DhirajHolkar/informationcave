@@ -23,12 +23,15 @@
 }
 
 .blogsection-heading-h4,
-.blogsection-heading-h5,
-.blogsection-heading-h6 {
+.blogsection-heading-h5{
   font-size: 2rem;
   font-weight: 600;
   /* margin: 1.2rem 0 0.6rem; */
   margin-top: 3rem;
+}
+.blogsection-heading-h6{
+  font-size: 1.1rem;
+  font-weight: normal;
 }
 
 .blogsection-ul,
